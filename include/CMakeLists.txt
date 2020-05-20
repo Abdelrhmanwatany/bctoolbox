@@ -41,6 +41,7 @@ endif()
 
 if(MBEDTLS_FOUND OR POLARSSL_FOUND)
 	list(APPEND HEADER_FILES crypto.h)
+	list(APPEND HEADER_FILES crypto.hh)
 endif()
 
 if(ENABLE_TESTS_COMPONENT)
